@@ -7,6 +7,9 @@
     "build": "webpack",
     "start": "node dist/bundle.js"
   },  
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/hasanm95"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
