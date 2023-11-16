@@ -8,7 +8,9 @@
     "start": "node dist/bundle.js"
   },  
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "access": "public"
   },
   "keywords": [],
   "author": "",
