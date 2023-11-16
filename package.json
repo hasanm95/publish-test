@@ -8,7 +8,7 @@
     "start": "node dist/bundle.js"
   },  
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/hasanm025"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [],
   "author": "",
