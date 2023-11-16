@@ -1,6 +1,6 @@
 {
-  "name": "@hasanm025/gh-action",
-  "version": "1.0.0",
+  "name": "@hasanm025/publish-test",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
