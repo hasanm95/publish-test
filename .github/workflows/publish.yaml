@@ -1,16 +1,37 @@
-name: Publish Release
+name: Publish Package
+
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
+permissions:
+  contents: read
+
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
-    - uses: actions/checkout@v3
-    - name: Create a Release
-      uses: elgohr/Github-Release-Action@v5
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-      with:
-        title: MyReleaseMessage
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          registry-url: 'https://registry.npmjs.org/'
+          cache: 'npm'
+          node-version: 'lts/*'
+
+      - name: Install Dependencies
+        run: npm clean-install
+
+      - name: Build Package
+        run: npm run build
+
+      - name: Publish to GitHub Packages
+        run: npm publish --access public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
