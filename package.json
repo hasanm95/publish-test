@@ -9,9 +9,7 @@
     "start": "node dist/bundle.js"
   },  
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest",
-    "access": "public"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [],
   "author": "",
