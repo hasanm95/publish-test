@@ -1,2 +1,2 @@
-export const message: string = "Hellooo, TypeScript!!!!!!!!";
+export const message: string = "Hellooo, TypeSccccript!!!!!!!!";
 console.log(message)
