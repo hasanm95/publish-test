@@ -21,8 +21,7 @@ jobs:
             - name: node
               uses: actions/setup-node@v2
               with:
-                  node-version: 12
-                  registry-url: https://registry.npmjs.org
+                  node-version: "lts/*"
             - name: publish
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
