@@ -11,6 +11,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "repository": {
+    "url": "https://github.com/hasanm95/publish-test.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
