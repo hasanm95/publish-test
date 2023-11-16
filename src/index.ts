@@ -1,2 +1,2 @@
-export const message: string = "Helljhooo, TypeSccccript!!!!!!!!";
+export const message: string = "Helljhooo,DSFAF TypeSccccript!!!!!!!!";
 console.log(message)
